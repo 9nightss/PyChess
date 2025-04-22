@@ -34,6 +34,9 @@ _Add screenshots here if you like._
 - Dependencies:
   ```bash
   pip install pillow
+  pip install tkinter
+  pip install ctypes
+  
   ```
 
 ### Folder Structure
