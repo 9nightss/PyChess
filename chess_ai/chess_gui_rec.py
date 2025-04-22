@@ -39,6 +39,9 @@ class ChessGame:
         self.highlighted = []
 
         self.create_board()
+    def start_game():
+        global game
+        game = ChessGame(root)
 
     def create_board(self):
         base_size = SQUARE_SIZE
