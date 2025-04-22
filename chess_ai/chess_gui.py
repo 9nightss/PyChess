@@ -10,6 +10,8 @@ BOARD_SIZE = 8
 SQUARE_SIZE = 80
 
 class ChessGame:
+    global Game
+    Game = ChessGame(root)
     def __init__(self, root, mode="pvp"):
         self.root = root
         self.root.title("Chess Game")
