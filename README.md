@@ -1,88 +1,58 @@
-# ♟️ Python Tkinter Chess Game
+Chess Game with AI and Learning Module
 
-A fully interactive chess game built with Python's `tkinter` library. Supports all standard chess rules, including **castling**, **en passant**, **promotion**, **check/checkmate detection**, and even **premoves**. Play against a human or a basic AI with randomized move selection.
+This project is an interactive Chess Game implemented in Python, featuring a playable AI that improves its moves over time using a learning mechanism. It is built with Tkinter for the user interface, PIL for piece rendering, and JSON-based caching for move learning.
 
-## 🚀 Features
+Features
 
-- 🧠 **Game Modes**:
-  - Player vs Player (PvP)
-  - Player vs AI (Randomized moves)
-- ✅ **Rules Supported**:
-  - Standard piece movements
-  - Castling (kingside and queenside)
-  - En passant
-  - Pawn promotion (custom choice via dialog)
-  - Check and checkmate detection
-  - Stalemate detection
-  - Premove system for quick gameplay
-- 🎨 **UI Highlights**:
-  - Tkinter-based 8x8 chessboard
-  - Highlighted legal move squares
-  - Semi-transparent themed piece icons
-- 🔊 **Sound Effects**:
-  - Play move sounds (custom `.wav` file path)
+Two-Player Game: Play against another human or the AI.
 
-## 🖼️ Screenshots
+Learning AI: The AI records moves and outcomes, adapting its strategies over time.
 
-_Add screenshots here if you like._
+Move Validation: Supports complex moves, including en passant and pawn promotion.
 
-## 🛠️ Getting Started
+Checkmate Detection: Alerts when the game has been won.
 
-### Prerequisites
+Lightweight Architecture: Pure Python and Tkinter implementation.
 
-- Python 3.x
-- Dependencies:
-  ```bash
-  pip install pillow
-  pip install tkinter
-  pip install ctypes
-  
-  ```
+Getting Started
 
-### Folder Structure
+Prerequisites
 
-```
-chess_game/
-│
-├── pieces/                  # Folder containing piece images (e.g. w_pawn.png, b_king.png)
-│   ├── w_pawn.png
-│   ├── b_queen.png
-│   └── move-self.wav        # Optional move sound effect
-├── chess_game.py            # Main game script
-└── README.md
-```
+Python 3.9 or later
 
-### Running the Game
+PIL (Pillow) for image processing
 
-```bash
-python chess_game.py
-```
+Install Dependencies
 
-## 🖱️ Controls
+pip install pillow
 
-- Click a piece to select it.
-- Valid moves will be highlighted.
-- Click a destination square to move.
-- Promotion will prompt a dialog to choose the piece.
-- For AI mode, switch the `mode` parameter in the constructor:
-  ```python
-  game = ChessGame(root, mode="ai")
-  ```
+Usage
 
-## ⚙️ Customization
+python path/to/your/script.py
 
-- **Piece Icons**: Replace PNGs in the `pieces/` folder.
-- **Sound Effects**: Replace `move-self.wav` with your own sound.
-- **AI Logic**: Currently uses randomized legal move selection. Can be replaced with a proper chess engine.
+Directory Structure
 
-## 📦 Future Improvements
+images/: Directory for piece images (w_king.png, b_queen.png, etc.)
 
-- Add undo/redo functionality
-- Timer support
-- Advanced AI (minimax or Stockfish integration)
-- Online multiplayer
-- Move history tracker
+learning_cache.json: Created automatically to save AI move data.
 
-## 📄 License
+Features to Expand
 
-MIT License — use freely, modify, and share.
+Advanced AI using deep learning techniques.
+
+Multiplayer over the network.
+
+Opening and endgame databases.
+
+Contributing
+
+Feel free to open issues, make suggestions, or fork this project to help evolve the AI or add new game features!
+
+License
+
+This project is open source and available under the MIT License.
+
+Future Vision: This project aims to evolve into a robust, learning chess engine that can adapt to its opponent and provide a challenging experience for both casual and competitive players.
+
+Have fun and happy coding!
+
