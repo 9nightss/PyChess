@@ -6,12 +6,12 @@ This project showcases the complete evolution of a Chess Game developed in Pytho
 
 | Feature                     | v1: Button-Based Game                            | v2: Canvas-Based AI Game                                                                             |
 | --------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| **User Interface**          | Developed with Tkinter Buttons and Frames        | Created using Tkinter Canvas for enhanced visual design and responsiveness                           |
+| **User Interface**          | Developed with Tkinter Buttons and Frames        | Created using Tkinter Canvas for visual design and responsiveness                                    |
 | **Move Execution**          | Moves selected via Button clicks                 | Moves selected via Mouse click events with graphical feedback                                        |
 | **Artificial Intelligence** | Random move generation with basic state checking | AI enhanced with a JSON-backed learning mechanism, making its moves evolve based on prior experience |
 | **Move Validation**         | Simple rule-based approach for valid moves       | Detailed FEN-based state parsing, robust rule enforcement, and advanced move generation              |
 | **UI Highlighting**         | Button background changes for highlighting       | Graphical overlay (circles) that visually denotes valid moves                                        |
-| **Additional Features**     | Sound effects for moves, basic promotion support | Complex move support (castling, en passant), promotion dialogues, and endgame detection              |
+| **Additional Features**     | Sound effects for moves, basic promotion support | i leave it same                                                                                      |
 | **Learning Capabilities**   | None (no state saved)                            | Incorporation of move recording and caching for long-term AI improvement                             |
 
 ## Why the New Version Stands Out
@@ -27,6 +27,14 @@ This project showcases the complete evolution of a Chess Game developed in Pytho
 * **Networking Capabilities:** Support for multiplayer online play. (Maybe)
 * **Modern User Experience:** Responsive design for mobile platforms and extended accessibility.
 
-**Final Thoughts:** This project is a testament to how incremental design, coupled with a forward-looking approach, can evolve a simple application into a robust, intelligent system that serves both as a playable game and an experimental AI research tool.
+**Final Thoughts:** This project is a starter project for me to get used to machine learning and neural network based algorytms simply but also im lazy :)
+
+
+## Known Bugs
+
+*At the few beggining games ai is not aware if the queen is checked and you have to actually capture it to checkmate but due to this ai is a "learning" (record/analyse for next games) based system its now happen on later stages
+*pawns have 2 square moves everytime (currently working on fixing that)
+*sometimes doesnt let you castle (currently working on fixing that)
+*
 
 > "From humble beginnings to a sophisticated learning AI — this is the roadmap of innovation in game design."
